@@ -8,8 +8,10 @@ import { Component } from '@angular/core';
        cat works!
      </p>
    `,
-  //template: '<p>cat works</p>',
-  styleUrls: ['./cat.component.scss', '../common.scss']
+  styleUrls: [
+    './cat.component.scss', // blue
+    '../common.scss' // red
+  ]
 })
 export class CatComponent {
 

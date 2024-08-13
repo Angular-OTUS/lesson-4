@@ -1,13 +1,28 @@
 :host {
+  display: block;
   color: red;
+  border: 1px solid red;
 }
 
 :host(.active) {
-  color: blue;
+  color: green;
+  border-color: green;
 }
 
-:host-context(.disabled) {
-  background-color: gray;
+:host-context(.active-context) {
+  color: blue;
+  border-color: blue;
+  p {
+    color: blue;
+  }
+}
+
+:host-context(.disable) {
+  color: gray;
+  border-color: gray;
+  p {
+    color: gray;
+  }
 }
 
 p {

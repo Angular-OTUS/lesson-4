@@ -12,6 +12,7 @@ import * as AppRootComponents from './components'
 import {UsersModule} from "./users/users.module";
 import { HostContextParentComponent } from './components/host-context-parent/host-context-parent.component';
 import { HostContextChildComponent } from './components/host-context-child/host-context-child.component';
+import {ExampleStandaloneComponent} from "./example-standalone/example-standalone.component";
 
 @NgModule({
   declarations: [
@@ -22,11 +23,12 @@ import { HostContextChildComponent } from './components/host-context-child/host-
     AppRootComponents.ViewEncapsulationShadowComponent,
     AppRootComponents.ViewEncapsulationNoneComponent,
     HostContextParentComponent,
-    HostContextChildComponent
+    HostContextChildComponent,
   ],
   imports: [
     BrowserModule,
-    UsersModule
+    UsersModule,
+    ExampleStandaloneComponent
   ],
   exports: [],
   providers: [],
